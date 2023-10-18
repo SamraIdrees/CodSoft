@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="image/pakistan.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Team<br>It's<span> Pakistan Cricket Team</span></h2>
+                <p>
+            The Pakistan national cricket team has represented Pakistan<br>
+            in international cricket since 1952. Pakistan compete in cricket<br>
+            tours and tournaments sanctioned by the PCB and other regional<br>
+            or international cricket bodies in Test,One Day International (ODI),<br>
+            and Twenty20 International (T20) formats.
+                </p>
+                <a href="#">Learn More</a>
+                </div>
+                <div class="imgBox">
+                    <img src="image/pct.jpg" class="pct">
+                </div>
+            </div>
+    <ul class="thumb">
+        <li><img src="image/thumb1.jpg"  onclick="imgSlider('image/pct.jpg');changeCircleColor('#017143')"></li>
+        <li><img src="image/thumb2.jpg"  onclick="imgSlider('image/pct2.jpg');changeCircleColor('#017143')"></li>
+        <li><img src="image/thumb3.jpg"  onclick="imgSlider('image/pct3.jpg');changeCircleColor('#017143')"></li>
+    </ul>
+    <ul class="sci">
+       <li><a href="#"><img src="image/facebook.png"></a></li>
+       <li><a href="#"><img src="image/instagram.png"></a></li>
+       <li><a href="#"><img src="image/twitter.png"></a></li>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pct').src= anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
+
+
+
